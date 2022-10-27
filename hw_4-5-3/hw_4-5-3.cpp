@@ -57,6 +57,9 @@ public:
 		if (A + B + C == 180) {
 			return true;
 		}
+		else {
+			return false;
+		}
 	}
 };
 
@@ -163,6 +166,9 @@ public:
 		if (A + B + C + D == 360) {
 			return true;
 		}
+		else {
+			return false;
+		}
 	}
 };
 
@@ -268,4 +274,14 @@ int main()
 
 	Figure* rho = new Rhombus(420, 80, 100);
 	rho->print();
+
+	delete tri;
+	delete r_t;
+	delete eq_t;
+	delete iso_t;
+	delete quad;
+	delete rect;
+	delete sqr;
+	delete par;
+	delete rho;
 }
